@@ -1,0 +1,32 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>Imagen</th>
+            <th>Nombre</th>
+            <th>Estilo</th>
+            <th>Precio</th>
+            <th>Stock</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><img [src]="beer.image" [alt]="beer.name"></td>
+            <td>{{beer.name}}</td>
+            <td>{{beer.style}}</td>
+            <td>{{beer.price}}</td>
+            <td>{{beer.stock}}</td>
+        </tr>
+        <tr>
+            <td>Hoopy day</td>
+            <td>Ipa</td>
+            <td>220</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Clover</td>
+            <td>Irish red</td>
+            <td>210</td>
+            <td>10</td>
+        </tr>
+    </tbody>
+</table>
