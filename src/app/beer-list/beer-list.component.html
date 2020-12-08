@@ -20,9 +20,7 @@
                 <span class="badge badge-primary" *ngIf="beer.stock > 0">Disponible!</span>
             </td>
             <td>
-                <button class="btn btn-primary btn-sm" (click)="downQuantity(beer)">-</button>
-                    <input type="number" [(ngModel)]="beer.quantity" (keyup)="onChangeQuantity($event, beer)">
-                <button class="btn btn-primary btn-sm" (click)="upQuantity(beer)">+</button>
+                <app-input-integer [(quantity)]="beer.quantity" [max]="beer.stock" *ngIf="beer.stock" (maxReached)="maxReached($event)"></app-input-integer>
             </td>
         </tr>
     </tbody>

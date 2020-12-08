@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { BreweryAboutComponent } from './brewery-about/brewery-about.component';
 import { BreweryBeersComponent } from './brewery-beers/brewery-beers.component';
 import { CartComponent } from './cart/cart.component';
+import { InputIntegerComponent } from './input-integer/input-integer.component';
 
 
 
@@ -17,7 +18,8 @@ import { CartComponent } from './cart/cart.component';
     BeerListComponent,
     BreweryAboutComponent,
     BreweryBeersComponent,
-    CartComponent
+    CartComponent,
+    InputIntegerComponent
   ],
   imports: [
     BrowserModule,
