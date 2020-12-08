@@ -1,4 +1,4 @@
-<table class="table">
+<table class="table text-center">
     <thead>
         <tr>
             <th>Imagen</th>
@@ -6,6 +6,7 @@
             <th>Estilo</th>
             <th>Precio</th>
             <th>Stock</th>
+            <th>Compra</th>
         </tr>
     </thead>
     <tbody>
@@ -17,6 +18,11 @@
             <td>
                 <span class="badge badge-warning" *ngIf="beer.stock == 0">SIN STOCK</span>
                 <span class="badge badge-primary" *ngIf="beer.stock > 0">Disponible!</span>
+            </td>
+            <td>
+                <button class="btn btn-primary btn-sm" (click)="downQuantity(beer)">-</button>
+                    <input type="number" [(ngModel)]="beer.quantity" (keyup)="onChangeQuantity($event, beer)">
+                <button class="btn btn-primary btn-sm" (click)="upQuantity(beer)">+</button>
             </td>
         </tr>
     </tbody>

@@ -16,6 +16,7 @@ export class BeerListComponent implements OnInit {
       stock: 5,
       image : 'assets/img/1.jpg',
       clearance: true,
+      quantity: 0,
     },
     {
       name: 'Hoppy Day',
@@ -24,6 +25,7 @@ export class BeerListComponent implements OnInit {
       stock: 7,
       image : 'assets/img/2.jpg',
       clearance: false,
+      quantity: 0,
     },
     {
       name: 'Clover',
@@ -32,12 +34,32 @@ export class BeerListComponent implements OnInit {
       stock: 0,
       image : 'assets/img/3.jpg',
       clearance: false,
+      quantity: 0,
     }
   ]
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  upQuantity(beer:Beer):void{
+    if(beer.quantity < beer.stock){
+      beer.quantity++;
+    } 
+  }
+
+  downQuantity(beer:Beer):void{
+    if(beer.quantity > 0){
+      beer.quantity--;
+    }  
+  }
+
+  onChangeQuantity(event, beer:Beer):void{
+    if(event.target.value > beer.stock){
+      event.target.value = beer.stock;
+      alert("Stock máximo alcanzado");
+    }
   }
 
 }
