@@ -2,6 +2,9 @@
 
 <ul>
     <li *ngFor="let bike of (cartList$ | async)">
+        
+        <img class="img-thumbnail" src="{{bike.image}}">
+        
         {{bike.name}}: {{bike.quantity}}
     </li>
 </ul>

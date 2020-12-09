@@ -1,6 +1,6 @@
 export interface Bike{
     name: string,
-    style: string,
+    description: string,
     price: number,
     stock: number,
     image: string,

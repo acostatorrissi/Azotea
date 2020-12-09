@@ -16,7 +16,7 @@ export class BikeCartService {
 
   addToCart(bike: Bike) {
     let item: Bike = this._cartList.find((v1) => v1.name == bike.name);
-    if(!item){
+    if(!item && bike.quantity > 0){
       this._cartList.push({...bike});
     }else{
       item.quantity += bike.quantity;
