@@ -21,7 +21,9 @@
             </td>
             <td>
                 <app-input-integer [(quantity)]="beer.quantity" [max]="beer.stock" *ngIf="beer.stock" (maxReached)="maxReached($event)"></app-input-integer>
+                <button class="btn btn-primary" (click)="addToCart(beer)">Comprar</button>
             </td>
+
         </tr>
     </tbody>
 </table>
