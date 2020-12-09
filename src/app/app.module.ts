@@ -3,10 +3,10 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BeerListComponent } from './beer-list/beer-list.component';
+import { BikeListComponent } from './bike-list/bike-list.component';
 import { FormsModule } from '@angular/forms';
-import { BreweryAboutComponent } from './brewery-about/brewery-about.component';
-import { BreweryBeersComponent } from './brewery-beers/brewery-beers.component';
+import { AzoteaAboutComponent } from './azotea-about/azotea-about.component';
+import { AzoteaBikesComponent } from './azotea-bikes/azotea-bikes.component';
 import { CartComponent } from './cart/cart.component';
 import { InputIntegerComponent } from './input-integer/input-integer.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -16,11 +16,11 @@ import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
-    BeerListComponent,
-    BreweryAboutComponent,
-    BreweryBeersComponent,
-    CartComponent,
-    InputIntegerComponent
+    BikeListComponent,
+    AzoteaAboutComponent,
+    AzoteaBikesComponent,
+    InputIntegerComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,

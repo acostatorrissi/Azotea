@@ -1,4 +1,4 @@
-export interface Beer{
+export interface Bike{
     name: string,
     style: string,
     price: number,

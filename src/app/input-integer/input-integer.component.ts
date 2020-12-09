@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { Beer } from '../beer-list/Beer';
+import { Bike } from '../bike-list/Bike';
 
 @Component({
   selector: 'app-input-integer',
